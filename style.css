@@ -1,0 +1,70 @@
+body {
+    background-image: url("greenfelt.png");
+}
+
+.hidden {
+    opacity: 0%;
+}
+
+.visible  {
+    opacity: 100%;
+}
+.text {
+    color: lime;
+}
+
+#player-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#dealer-container {
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+    }
+
+#dealer-title {
+    display: flex;
+    justify-content: center;
+}
+
+#dealer-cards {
+    display: flex;
+    height:350px;
+    width: auto;
+}
+
+#player-title {
+    display: flex;
+    justify-content: center;
+}
+
+#player-cards {
+    display: flex;
+    height:350px;
+    width: auto;
+}
+
+#gameover {
+    display: flex;
+    justify-content: center;
+    -webkit-animation: gameover 1s ease-in-out infinite alternate;
+    -moz-animation: gameover 1s ease-in-out infinite alternate;
+    animation: gameover 1s ease-in-out infinite alternate;
+    height: 50px;
+}
+
+@-webkit-keyframes gameover {
+    from {
+      text-shadow: 0 0 10px #eeeeee, 0 0 20px limegreen, 0 0 30px limegreen, 0 0 40px #000000, 
+                   0 0 50px gold, 0 0 60px gold, 0 0 70px gold;
+    }
+    to {
+      text-shadow: 0 0 20px #eeeeee, 0 0 30px green, 0 0 40px green, 0 0 50px green, 
+                   0 0 60px green, 0 0 70px green, 0 0 80px green;
+    }
+  }
